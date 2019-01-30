@@ -8,10 +8,10 @@
 	(slot location (type STRING))
 	(slot cuisine (type STRING))
 	(slot experience (type STRING))
-	(slot rating(type NUMBER))
 	(slot has-delivery (type STRING))
 	(slot has-alcohol (type STRING))
 	(slot has-vegetarian (type STRING))
+	(slot rating(type NUMBER))
 )
 
 ;;each user's search preferences
@@ -20,9 +20,9 @@
 	(slot location (type STRING))
 	(slot cuisine (type STRING))
 	(slot experience (type STRING))
-	(slot rating(type NUMBER))
 	(slot has-delivery (type STRING))
 	(slot has-alcohol (type STRING))
 	(slot has-vegetarian (type STRING))
+	(slot rating (type NUMBER))
 
 )
