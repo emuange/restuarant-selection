@@ -4,5 +4,20 @@
 (defrule restaurant-matching
     ;;(declare salience 1))
     (restaurant (ID ?ID) (name ?name) (budget ?budget) (location ?location) (cuisine ?cuisine) 
-                         (experience ?experience) (rating ?rating) (has-delivery ?has-delivery) (has-alcohol ?has-alcohol) 
-                         (has-vegetarian ?has-vegetarian))
+                         (experience ?experience) (has-delivery ?has-delivery) (has-alcohol ?has-alcohol) 
+                         (has-vegetarian ?has-vegetarian) (rating ?rating))
+    (preference (budget ?|"?"budget)
+                (location ?|"?"location)
+                (cuisine ?|"?"cuisine)
+                (experience ?|"?"experience)
+                (has-delivery ?|"?"has-delivery)
+                (has-alcohol ?|"?"has-alcohol)
+                (has-vegetarian ?|"?"has-vegetarian)
+                (rating ?|"?"rating))
+                
+=>
+    (printout t ?ID "," ?budget "," ?location "," ?cuisine "," ?experience "," ?has-delivery "," 
+            ?has-alcohol "," ?has-vegetarian "," ?rating "---")
+            
+)
+                
