@@ -16,7 +16,7 @@
                 (rating ?|"?"rating))
                 
 =>
-    (printout t ?ID "," ?budget "," ?location "," ?cuisine "," ?experience "," ?has-delivery "," 
+    (printout t ?ID "," ?name "," ?budget "," ?location "," ?cuisine "," ?experience "," ?has-delivery ","
             ?has-alcohol "," ?has-vegetarian "," ?rating "---")
             
 )
